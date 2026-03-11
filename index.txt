@@ -1,3 +1,0 @@
-This is Git sample file for Practice the Git Commands
-This is New content of new branch feature branch 
-In these I added one line
