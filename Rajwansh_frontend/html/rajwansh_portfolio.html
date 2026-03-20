@@ -183,5 +183,53 @@
     </ol>
 </section>
 
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form>
+        <!-- Name -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <!-- Phone -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br><br>
+
+        <!-- Date -->
+        <label for="date">Preferred Contact Date:</label><br>
+        <input type="date" id="date" name="date"><br><br>
+
+        <!-- File Upload -->
+        <label for="resume">Upload Resume:</label><br>
+        <input type="file" id="resume" name="resume"><br><br>
+
+        <!-- Message -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea><br><br>
+        <!-- Dropdown -->
+        <label for="role">Reason for Contact:</label><br>
+        <select id="role" name="role">
+            <option value="">Select an option</option>
+            <option value="job">Job Opportunity</option>
+            <option value="project">Project Collaboration</option>
+            <option value="query">General Query</option>
+        </select><br><br>
+
+        
+
+        <!-- Range -->
+        <label for="rating">Rate my portfolio:</label><br>
+        <input type="range" id="rating" name="rating" min="1" max="10"><br><br>
+
+        <!-- Submit & Reset -->
+        <input type="submit" value="Send Message">
+        <input type="reset" value="Reset Form">
+    </form>
+</section>
 </body>
 
