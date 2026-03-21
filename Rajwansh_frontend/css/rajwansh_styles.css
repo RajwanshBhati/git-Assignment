@@ -349,3 +349,87 @@ header {
   height: 1px;
   background-color: #333;
 }
+
+
+/* contact section */
+#contact {
+  margin: 30px auto;
+  padding: 25px;
+  width: 85%;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+}
+
+/* heading */
+.title {
+  color: #d4af37;
+  margin-bottom: 15px;
+}
+
+/* form layout */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* labels */
+.contact-form label {
+  margin-top: 10px;
+  color: #f5f5f5;
+}
+
+/* inputs and textarea */
+#name,
+#email,
+#message,
+#date,
+#time,
+#reason {
+  margin-top: 5px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* textarea resize */
+#message {
+  resize: none;
+}
+
+/* radio buttons */
+#emailC,
+#phoneC {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+/* buttons container */
+.form-btns {
+  margin-top: 15px;
+}
+
+/* buttons */
+.form-btns input {
+  padding: 8px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d4af37;
+  color: #121212;
+  cursor: pointer;
+}
+
+/* hover effect */
+.form-btns input:hover {
+  opacity: 0.85;
+}
+
+/* hr */
+#contact hr {
+  margin-top: 15px;
+  border: none;
+  height: 1px;
+  background-color: #333;
+}
