@@ -433,3 +433,37 @@ header {
   height: 1px;
   background-color: #333;
 }
+
+
+/* footer */
+footer {
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  background-color: #181818;
+}
+
+/* main text */
+.footer-para {
+  color: #b0b0b0;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+/* second line */
+.child-footer {
+  color: #f5f5f5;
+  font-size: 0.95rem;
+}
+
+/* links */
+.child-footer a {
+  color: #d4af37;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+/* hover */
+.child-footer a:hover {
+  text-decoration: underline;
+}
