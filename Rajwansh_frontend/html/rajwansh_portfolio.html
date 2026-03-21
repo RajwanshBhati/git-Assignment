@@ -24,22 +24,30 @@
         alt="Rajwansh profile picture"
         width="150" height="150"
       />
+      <hr>
     </header>
 
     <!-- ================= NAVIGATION SECTION ================= -->
-    <!-- Navigation menu to jump to different sections of the page -->
     <nav>
-        <ul>
-            <!-- Each navigation item links to sections below using id -->
-            <li><a href="#about">About</a></li>
+  <ul>
+    <li><a href="#about">About</a></li>
 
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <li>
+      <a href="#skills">Skills</a>
+      <ul>
+        <li><a href="#skills">Technical</a></li>
+        <li><a href="#skills">Soft Skills</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <hr>
+</nav>
 
     <!-- ================= ABOUT SECTION ================= -->
 <section id="about">
@@ -87,46 +95,54 @@
         </li>
 
     </ul>
+    <hr>
 </section>
 
-  <!-- EDUCATION SECTION: Table structure with colspan to merge cells -->
-    <section id="education">
-        <h2>Education</h2>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Degree</th>
-                    <th>Institution</th>
-                    <th>Year Completed</th>
-                    <th>Grade/GPA</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- First education entry -->
-                <tr>
-                    <td>Bachelor of Technology in Computer Science and Engineering</td>
-                    <td>Swami Vivekananda College of Engineering Indore</td>
-                    <td>2025</td>
-                    <td>9.33/10.0</td>
-                </tr>
-                <!-- Second education entry -->
-                <tr>
-                    <td>Senior Secondary School (12th)</td>
-                    <td>Shri Garima Vidya Mandir H. S. School</td>
-                    <td>2021</td>
-                    <td>89.8%</td>
-                </tr>
-                <!-- Third education entry -->
-                <tr>
-                    <td>Class 10th</td>
-                    <td>Shri Garima Vidya Mandir H. S. School</td>
-                    <td>2019</td>
-                    <td>88.4%</td>
-                </tr>
-            </tbody>
-        </table>
-        <hr>
-    </section>
+  <!-- EDUCATION SECTION: with Colspan -->
+   <section id="education">
+    <h2>Education</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year Completed</th>
+                <th>Grade/GPA</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- entry with colspan -->
+            <tr>
+                <td colspan="2">
+                    Bachelor of Technology in Computer Science and Engineering - 
+                    SVCE Indore
+                </td>
+                <td>2025</td>
+                <td>9.33/10.0</td>
+            </tr>
+
+            <!-- Second education entry -->
+            <tr>
+                <td>Senior Secondary School (12th)</td>
+                <td>Shri Garima Vidya Mandir H. S. School</td>
+                <td>2021</td>
+                <td>89.8%</td>
+            </tr>
+
+            <!-- Third education entry -->
+            <tr>
+                <td>Class 10th</td>
+                <td>Shri Garima Vidya Mandir H. S. School</td>
+                <td>2019</td>
+                <td>88.4%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+</section>
 
 <!-- ================= EXPERIENCE ================= -->
 <section id="experience">
@@ -147,89 +163,138 @@
         
         <li>Optimized frontend performance and API interactions in the <strong>IP Infusion project</strong> using Vue.js, improving overall application efficiency.</li>
     </ul>
+    <hr>
 </section>
 
 <!-- ================= PROJECTS ================= -->
 <section id="projects">
-    <h2>Projects</h2>
+  <h2>Projects</h2>
 
-    <ol>
-       <li>
-    <strong>Fitness Tracker Application</strong> | Spring Boot, Spring Security, JWT, JPA, MySQL, Docker
-    <ul>
-        <li>Developed a full-stack fitness tracker to monitor user activities, calories, and workout duration.</li>
-        <li>Designed database schema using ER diagrams and implemented relationships with JPA/Hibernate.</li>
-        <li>Built secure REST APIs for user registration, login, and activity tracking.</li>
-        <li>Implemented JWT-based authentication and role-based authorization using Spring Security.</li>
-        <li>Added validation and global exception handling for robust backend processing.</li>
-        <li>Integrated AI-based fitness recommendations based on user activity and history.</li>
-        <li>Documented APIs using Swagger/OpenAPI and tested endpoints with Postman.</li>
-        <li>Containerized the application using Docker and deployed it to the cloud.</li>
-    </ul>
-</li>
+  <ol>
+    <!-- Project 1 -->
+    <li>
+      <article>
+        
+        <h3>
+          Fitness Tracker Application 
+          <a href="https://github.com/RajwanshBhati" target="_blank">
+            🔗 GitHub
+          </a>
+        </h3>
 
-        <br>
+        <p><strong>Tech Stack:</strong> Spring Boot, Spring Security, JWT, JPA, MySQL, Docker</p>
 
-        <li>
-            <strong>AI Automatic PR Review & Feedback System</strong> | Next.js, TypeScript, AI
-            <ul>
-                <li>Developed an automated system to review GitHub pull requests and provide AI-generated feedback.</li>
-                <li>Built frontend using Next.js, TypeScript, Tailwind CSS, and modern component-based architecture.</li>
-                <li>Implemented backend logic using Next.js Server Actions for secure processing.</li>
-                <li>Used Prisma ORM with PostgreSQL to manage repositories and review metadata.</li>
-                <li>Integrated Gemini AI for detecting bugs, best-practice violations, and optimization opportunities.</li>
-            </ul>
-        </li>
-    </ol>
+        <ul>
+          <li>Developed a full-stack fitness tracker application to monitor user activities, calories burned, and workout duration efficiently.</li>
+          
+          <li>Designed and implemented a scalable database schema using JPA/Hibernate to manage user data and activity records.</li>
+          
+          <li>Built secure REST APIs for user registration, login, and activity tracking using JWT-based authentication and authorization.</li>
+          
+          <li>Integrated AI-based fitness recommendations to provide personalized suggestions based on user activity history.</li>
+          
+          <li>Implemented validation, exception handling, and optimized backend performance for reliable data processing.</li>
+          
+          <li>Containerized the application using Docker and deployed it to ensure portability and scalability.</li>
+        </ul>
+
+      </article>
+    </li>
+
+    <!-- Project 2 -->
+    <li>
+      <article>
+        
+        <h3>
+          AI PR Review & Feedback System 
+          <a href="https://github.com/RajwanshBhati" target="_blank">
+            🔗 GitHub
+          </a>
+        </h3>
+
+        <p><strong>Tech Stack:</strong> Next.js, TypeScript, Prisma, PostgreSQL, AI</p>
+
+        <ul>
+          <li>Developed an automated system to analyze GitHub pull requests and generate intelligent AI-based feedback for developers.</li>
+          
+          <li>Built a modern and responsive frontend using Next.js, TypeScript, and Tailwind CSS with a component-based architecture.</li>
+          
+          <li>Implemented backend logic using Next.js Server Actions to securely process and analyze code changes.</li>
+          
+          <li>Utilized Prisma ORM with PostgreSQL for efficient database management and storage of repository metadata.</li>
+          
+          <li>Integrated AI models to detect bugs, suggest optimizations, and enforce coding best practices automatically.</li>
+          
+          <li>Improved developer productivity by reducing manual code review effort and enhancing code quality.</li>
+        </ul>
+
+      </article>
+    </li>
+  </ol>
+
+  <hr>
 </section>
-
 <!-- ================= CONTACT ================= -->
 <section id="contact">
-    <h2>Contact Me</h2>
+  <h2>Contact Me</h2>
 
-    <form>
-        <!-- Name -->
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+  <form>
+    <!-- Name -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-        <!-- Email -->
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+    <br><br>
 
-        <!-- Phone -->
-        <label for="phone">Phone Number:</label><br>
-        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br><br>
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-        <!-- Date -->
-        <label for="date">Preferred Contact Date:</label><br>
-        <input type="date" id="date" name="date"><br><br>
+    <br><br>
 
-        <!-- File Upload -->
-        <label for="resume">Upload Resume:</label><br>
-        <input type="file" id="resume" name="resume"><br><br>
+    <!-- Message -->
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
 
-        <!-- Message -->
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea><br><br>
-        <!-- Dropdown -->
-        <label for="role">Reason for Contact:</label><br>
-        <select id="role" name="role">
-            <option value="">Select an option</option>
-            <option value="job">Job Opportunity</option>
-            <option value="project">Project Collaboration</option>
-            <option value="query">General Query</option>
-        </select><br><br>
+    <br><br>
 
-        
+    <!-- Contact Date -->
+    <label for="date">Preferred Contact Date:</label>
+    <input type="date" id="date" name="date">
 
-        <!-- Range -->
-        <label for="rating">Rate my portfolio:</label><br>
-        <input type="range" id="rating" name="rating" min="1" max="10"><br><br>
+    <br><br>
 
-        <!-- Submit & Reset -->
-        <input type="submit" value="Send Message">
-        <input type="reset" value="Reset Form">
-    </form>
+    <!-- Contact Time -->
+    <label for="time">Preferred Contact Time:</label>
+    <input type="time" id="time" name="time">
+
+    <br><br>
+
+    <!-- Radio -->
+    <label>Preferred Contact Method:</label><br>
+    <input type="radio" id="emailC" name="contact" value="email">
+    <label for="emailC">Email</label>
+
+    <input type="radio" id="phoneC" name="contact" value="phone">
+    <label for="phoneC">Phone</label>
+
+    <br><br>
+
+    <!-- Dropdown -->
+    <label for="reason">Reason:</label>
+    <select id="reason" name="reason">
+      <option value="">Select</option>
+      <option value="job">Job</option>
+      <option value="project">Project</option>
+    </select>
+
+    <br><br>
+
+    <!-- Buttons -->
+    <input type="submit" value="Send Message">
+    <input type="reset" value="Reset Form">
+  </form>
+
+  <hr>
 </section>
 
 
