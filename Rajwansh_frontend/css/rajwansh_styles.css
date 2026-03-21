@@ -278,3 +278,74 @@ header {
   height: 1px;
   background-color: #333;
 }
+
+
+/* projects section */
+#projects {
+  margin: 30px auto;
+  padding: 25px;
+  width: 85%;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+}
+
+/* heading */
+.title {
+  color: #d4af37;
+  margin-bottom: 15px;
+}
+
+/* list */
+.project-list {
+  padding-left: 20px;
+}
+
+/* each project */
+.project {
+  margin-bottom: 25px;
+}
+
+/* project title */
+.project-title {
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+/* github link */
+.project-link {
+  margin-left: 10px;
+  font-size: 0.9rem;
+  color: #d4af37;
+  text-decoration: none;
+}
+
+/* hover effect */
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* tech stack */
+.tech {
+  color: #b0b0b0;
+  margin-bottom: 8px;
+}
+
+/* points */
+.project-points {
+  padding-left: 20px;
+  color: #b0b0b0;
+  line-height: 1.6;
+}
+
+/* highlight */
+.project-points strong {
+  color: #ffffff;
+}
+
+/* hr */
+#projects hr {
+  margin-top: 15px;
+  border: none;
+  height: 1px;
+  background-color: #333;
+}
