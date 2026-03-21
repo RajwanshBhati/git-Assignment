@@ -149,3 +149,52 @@ topperStudents.forEach((entry) => {
   console.log(`Class topper : ${entry.name} with ${entry.marks} marks`);
 });
 
+
+function getGrade(students) {
+  students.forEach((student) => {
+    let grade = "";
+
+    // storing subjects where student scored less than passing marks
+    let failedSubjects = [];
+
+    student.marks.forEach((subject) => {
+      if (subject.score < 40) {
+        failedSubjects.push(subject.subject);
+      }
+    });
+
+    // saving failed subjects inside student object for later use
+    student.failedIn = failedSubjects;
+
+    // checking if student has failed in any subject
+    if (failedSubjects.length > 0) {
+      grade = `fail (failed in ${failedSubjects})`;
+
+    // checking attendance condition
+    } else if (student.attendance < 75) {
+      grade = "fail (low attendance)";
+
+    } else {
+
+      // assigning grade based on average marks
+      if (student.average >= 85) {
+        grade = "A";
+      } else if (student.average >= 70) {
+        grade = "B";
+      } else if (student.average >= 50) {
+        grade = "C";
+      } else {
+        grade = "fail";
+      }
+    }
+
+    // storing final grade inside student object
+    student.grade = grade;
+
+    // printing final grade for each student
+    console.log(`${student.name} Grade: ${student.grade}`);
+  });
+}
+
+console.log("6. Grade for each student");
+getGrade(students);
