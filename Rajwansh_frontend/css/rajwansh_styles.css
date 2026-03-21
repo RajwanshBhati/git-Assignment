@@ -176,3 +176,105 @@ header {
   height: 1px;
   background-color: #333;
 }
+
+
+/* education section */
+#education {
+  margin: 30px auto;
+  padding: 25px;
+  width: 85%;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+}
+
+/* heading */
+.title {
+  color: #d4af37;
+  margin-bottom: 15px;
+}
+
+/* table */
+.edu-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* table cells */
+.edu-table th,
+.edu-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #333;
+}
+
+/* header */
+.edu-table th {
+  background-color: #d4af37;
+  color: #121212;
+  text-align: center;
+}
+
+/* alternate rows */
+.edu-table tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+/* hr */
+#education hr {
+  margin-top: 15px;
+  border: none;
+  height: 1px;
+  background-color: #333;
+}
+
+/* experience section */
+#experience {
+  margin: 30px auto;
+  padding: 25px;
+  width: 85%;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+}
+
+/* heading */
+.title {
+  color: #d4af37;
+  margin-bottom: 15px;
+}
+
+/* job role */
+.job-role {
+  margin-bottom: 15px;
+  color: #b0b0b0;
+}
+
+/* date */
+.job-date {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* company */
+.company {
+  color: #f5f5f5;
+}
+
+/* list */
+.exp-list {
+  padding-left: 20px;
+  color: #b0b0b0;
+  line-height: 1.6;
+}
+
+/* highlight tech */
+.exp-list strong {
+  color: #ffffff;
+}
+
+/* hr */
+#experience hr {
+  margin-top: 15px;
+  border: none;
+  height: 1px;
+  background-color: #333;
+}
