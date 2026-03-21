@@ -36,8 +36,8 @@
     <li class="nav-item">
       <a href="#skills">Skills</a>
       <ul class="dropdown">
-        <li><a href="#skills">Technical</a></li>
-        <li><a href="#skills">Soft Skills</a></li>
+        <li class="technical"><a href="#skills">Technical</a></li>
+        <li class="soft-skill"><a href="#skills">Soft Skills</a></li>
       </ul>
     </li>
 
@@ -71,7 +71,7 @@
     <ul class="skills">
         
         <li class="skills"><strong>Technical Skills</strong>
-            <!-- Nested list -->
+            <!-- used Nested list -->
             <ul class="skill-list">
                 <li>Programming: C/C++, Java, JavaScript</li>
                 <li>Frontend: HTML, CSS, React.js, Vue.js</li>
@@ -270,13 +270,19 @@
 
     <br><br>
 
-    <!-- Radio -->
-    <label>Preferred Contact Method:</label><br>
-    <input type="radio" id="emailC" name="contact" value="email">
-    <label for="emailC">Email</label>
+    <!--Radio Buttons-->
 
-    <input type="radio" id="phoneC" name="contact" value="phone">
-    <label for="phoneC">Phone</label>
+    <label>Preferred Contact Method:</label>
+
+<div class="radio-group">
+  <label>
+    <input type="radio" name="contact" value="email"> Email
+  </label>
+
+  <label>
+    <input type="radio" name="contact" value="phone"> Phone
+  </label>
+</div>
 
     <br><br>
 
