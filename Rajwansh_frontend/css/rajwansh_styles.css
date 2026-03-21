@@ -95,3 +95,38 @@ header {
 .nav-item:hover .dropdown {
   display: block;
 }
+
+/* about section */
+#about {
+  margin: 30px auto;
+  padding: 25px;
+  width: 85%;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+}
+
+/* common heading style */
+.section-title {
+  color: #d4af37;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+/* about text */
+.about-para {
+  color: #b0b0b0;
+  line-height: 1.7;
+}
+
+/* highlight text */
+.about-para strong {
+  color: #ffffff;
+}
+
+/* hr styling */
+#about hr {
+  margin-top: 15px;
+  border: none;
+  height: 1px;
+  background-color: #333;
+}
