@@ -1,6 +1,6 @@
 **Output Screenshots**
 
-**Give Data**
+**Given Data**
 
 <img width="1852" height="921" alt="image" src="https://github.com/user-attachments/assets/68b10142-fe96-4061-9e75-060f5fdabf9b" />
 
@@ -9,7 +9,7 @@ I Used the array named students it also stores objects I used these data for tes
 
 <hr/>
 
-** 1. Total Marks of Each Student**
+**1. Total Marks of Each Student**
 
 <img width="864" height="453" alt="image" src="https://github.com/user-attachments/assets/46811c1f-b199-477e-98d1-0c772bbd7610" />
 
@@ -34,7 +34,7 @@ Average is found by dividing total marks by the number of subjects. This makes i
 
 <hr/>
 
-** 3. Subject-wise Highest Score in the Class**
+**3. Subject-wise Highest Score in the Class**
 
 <img width="809" height="560" alt="image" src="https://github.com/user-attachments/assets/24a31bc8-a47d-46bf-bdf8-31f9d803fb3d" />
 
@@ -77,9 +77,9 @@ Total marks of all students are compared and the highest scorer is selected as c
 <img width="600" height="705" alt="image" src="https://github.com/user-attachments/assets/593d6328-bfea-4cd1-811f-e0f0fca64096" />
 
 Grades are assigned based on average marks:
-85+ = A
-70–84 = B
-50–69 = C
+85+ = A,
+70–84 = B,
+50–69 = C,
 Below 50 = Fail
 
 Also, if a student fails in any subject or has attendance below 75%, they are directly marked as Fail.
