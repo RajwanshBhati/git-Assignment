@@ -1,3 +1,4 @@
+// Sample data for students using for testing our functions
 const students = [
 {
  name: "Lalit",
