@@ -89,4 +89,11 @@ function subjectWiseHighest(students) {
 console.log("3. Subject-wise Highest Score in the Class");
 const subjectTopper = subjectWiseHighest(students);
 
+//we use for in loop for objects
+for (let sub in subjectTopper) {
+  console.log(
+    `Highest in ${sub} : ${subjectTopper[sub].name} (${subjectTopper[sub].marks})`,
+  );
+}
+
 
