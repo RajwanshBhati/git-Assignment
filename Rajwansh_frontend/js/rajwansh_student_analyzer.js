@@ -54,7 +54,7 @@ console.log("1. Total marks for each student");
 // calling function because we want to see total marks for each student in console
 calculateTotalMarks(students);
 
-
+// here I am calculating Average marks for each student
 function calculateAverage(students) {
   students.forEach((student) => {
     let avg = student.totalMarks / student.marks.length;
@@ -68,6 +68,7 @@ function calculateAverage(students) {
 console.log("2. Average marks for each student");
 calculateAverage(students);
 
+// here I am calculating subject-wise highest score in the class
 function subjectWiseHighest(students) {
   const highestMarks = {};
   students.forEach((student) => {
@@ -96,4 +97,27 @@ for (let sub in subjectTopper) {
   );
 }
 
+// here I am calculating Subject-wise average score in the class
+function subjectWiseAverageScore(students) {
+  const subTotal = {};
+  students.forEach((student) => {
+    student.marks.forEach((subject) => {
+      //if there is no entry of a subject
+      if (subTotal[subject.subject] === undefined) {
+        subTotal[subject.subject] = subject.score;
+      } else {
+        subTotal[subject.subject] += subject.score;
+      }
+    });
+  });
+  return subTotal;
+}
+console.log("4. Subject-wise Average Score");
+let subjectTotalAvg = subjectWiseAverageScore(students); //storing the obj returned by our function
+let numberOfStudents = students.length;
+//for console output
+for (let sub in subjectTotalAvg) {
+  let avg = subjectTotalAvg[sub] / numberOfStudents;
+  console.log(`Average ${sub} Score: ${avg.toFixed(1)}`);
+}
 
