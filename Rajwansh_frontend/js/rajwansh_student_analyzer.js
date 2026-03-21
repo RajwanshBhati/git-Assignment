@@ -121,3 +121,31 @@ for (let sub in subjectTotalAvg) {
   console.log(`Average ${sub} Score: ${avg.toFixed(1)}`);
 }
 
+// here I am calculating  Overall Class Topper
+function getTopper(students) {
+  let toppers = []; //using array to store the name and total marks of the toppers
+  let maxMark = -1;
+  students.forEach((student) => {
+    if (student.totalMarks > maxMark) {
+      maxMark = student.totalMarks;
+      toppers = [];
+      toppers.push({
+        name: student.name,
+        marks: student.totalMarks,
+      });
+    } else if (student.totalMarks === maxMark) {
+      //if we have more than 1 topper
+      toppers.push({
+        name: student.name,
+        marks: student.totalMarks,
+      });
+    }
+  });
+  return toppers;
+}
+console.log("5. Determine Overall Class Topper");
+const topperStudents = getTopper(students); //storing the array returned by our function
+topperStudents.forEach((entry) => {
+  console.log(`Class topper : ${entry.name} with ${entry.marks} marks`);
+});
+
